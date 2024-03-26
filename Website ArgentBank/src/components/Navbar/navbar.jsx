@@ -2,7 +2,7 @@ import { NavLink, Link } from 'react-router-dom'
 import argentBankLogo from '../../assets/img/argentBankLogo.png'
 
 function Navbar() {
-  const loggedIn = true
+  const loggedIn = false
 
   // Rendu du composant Header
   return (
