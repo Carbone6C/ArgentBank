@@ -1,4 +1,13 @@
+// import { useSelector, useDispatch } from 'react-redux';
+// import { login } from '../redux';
+
 function SignIn() {
+  // const dispatch = useDispatch();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   dispatch(login(/* userData */))
+  // }
+
   return (
     <main className="main bg-dark">
       <section className="sign-in-content">
@@ -17,7 +26,6 @@ function SignIn() {
             <input type="checkbox" id="remember-me" />
             <label htmlFor="remember-me">Remember me</label>
           </div>
-
           <button type="submit" className="sign-in-button">
             Sign In
           </button>

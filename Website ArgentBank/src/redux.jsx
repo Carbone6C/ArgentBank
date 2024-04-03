@@ -1,41 +1,37 @@
 // import { configureStore, createSlice } from "@reduxjs/toolkit";
 
-// const userSlice = createSlice({
-//     name: "user",
-//     initialState: [
-//         {id: 1, userName: "Tony Stark", done = false },
-//     ],
+// const authSlice = createSlice({
+//     name: "auth",
+//     initialState: {
+//         isLoggedIn: false,
+//         user: null
+//     },
+
 //     reducers: {
-//         addUser: (state, action) => {
-//             // { type: "user/addUser", payload: "ajouter utilisateur"}
-//             const newUser = {
-//                 id: Date.now(),
-//                 done: false,
-//                 userName: action.payload,
-//             };
-
-//             state.push(newUser);
+//         login: (state, action) => {
+//             // { type: "auth/login", payload: "Tony Stark"}
+//             state.isLoggedIn = true
+//             state.user = action.payload
 //         },
 
-//         toggleUser: (state, action) => {
-//             // { type: "user/toggleUser", payload: "20"}
-//             const user = state.find((t) => t.id === action.payload);
-//             user.done = !user.done;
-
+//         logout: (state) => {
+//             state.isLoggedIn = false
+//             state.user = null
 //         },
 
-//         deleteUser: (state, action) => {
-//             // { type: "user/deleteUser", payload: "20"}
-//             state = state.filter((t) => t.id !== action.payload);
-//             return state;
-//         },
 //     }
 // });
 
-// const = { addUser, deleteUser, toggleUser } = userSlice.actions;
-
+// export const { login, logout } = authSlice.actions;
 // export const store = configureStore({
 //     reducer: {
-//         user: userSlice.reducer,
+//         auth: authSlice.reducer,
 //     }
 // })
+
+// const createToggle = (id) => {
+//     return {
+//         type: "auth/login"
+//         payload: id
+//     }
+// }
