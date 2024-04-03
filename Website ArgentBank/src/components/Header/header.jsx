@@ -1,8 +1,10 @@
 import { NavLink, Link } from 'react-router-dom'
 import argentBankLogo from '../../assets/img/argentBankLogo.png'
+import { useSelector } from 'react-redux'
 
-function Navbar() {
+function Header() {
   const loggedIn = false
+  // const users = useSelector((state) => state.user)
 
   // Rendu du composant Header
   return (
@@ -39,4 +41,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Header
