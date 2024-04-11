@@ -1,6 +1,7 @@
 import Account from '../../components/Account/account'
 
 function Dashboard() {
+  // Rendu de la page Dashboard
   return (
     <main className="main bg-dark">
       <div className="header">

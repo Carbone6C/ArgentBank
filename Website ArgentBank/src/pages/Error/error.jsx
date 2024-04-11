@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
 const Error = () => {
-  // Rendu du composant Error
+  // Rendu de la page Error
   return (
     <div className="error">
       <h1 className="error__404">404</h1>

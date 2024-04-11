@@ -5,6 +5,7 @@ import iconMoney from '../../assets/img/icon-money.png'
 import iconSecurity from '../../assets/img/icon-security.png'
 
 function Home() {
+  // Rendu de la page Home
   return (
     <main>
       <div className="hero">
