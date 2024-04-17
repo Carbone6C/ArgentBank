@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom'
 // import { useEffect, useState } from 'react'
 
 import { useSelector } from 'react-redux'
-import { selectCurrentUser } from '../../redux'
+import { selectCurrentToken } from '../../redux'
 
 function Header() {
-  const user = useSelector(selectCurrentUser)
+  const token = useSelector(selectCurrentToken)
 
   // Rendu du composant Header
   return (
@@ -22,7 +22,7 @@ function Header() {
         />
         <h1 className="sr-only">Argent Bank</h1>
       </Link>
-      {user ? <Logout /> : <Login />}
+      {token ? <Logout /> : <Login />}
     </nav>
   )
 }

@@ -257,12 +257,28 @@ body {
   flex: 1;
 }
 
-.edit-button {
+.edit-button,
+.save-button,
+.cancel-button {
   border-color: #00bc77;
   background-color: #00bc77;
   color: #fff;
   font-weight: bold;
   padding: 10px;
+}
+
+#edit-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+#button-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 5px
 }
 
 .header {
