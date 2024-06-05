@@ -17,6 +17,7 @@ function Dashboard() {
   const [isEditing, setIsEditing] = useState(false)
   // State pour modification du username
   const [newUserName, setNewUserName] = useState('')
+
   // Dispatch Redux
   const dispatch = useDispatch()
   // Données du store Redux

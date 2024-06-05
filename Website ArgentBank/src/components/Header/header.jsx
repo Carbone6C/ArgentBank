@@ -1,4 +1,4 @@
-import argentBankLogo from '../../assets/img/argentBankLogo.png'
+import argentBankLogo from '../../assets/img/argentBankLogo.webp'
 import Login from '../Login/login'
 import Logout from '../Logout/logout'
 
